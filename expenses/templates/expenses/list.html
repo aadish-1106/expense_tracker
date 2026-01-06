@@ -1,0 +1,14 @@
+<h1>Expense Tracker</h1>
+<a href="{% url 'add_expense' %}">Add Expense</a>
+
+<ul>
+  {% for expense in expenses %}
+    <li>
+      {{ expense.category }} - {{ expense.amount }} - {{ expense.date }}
+      <a href="{% url 'edit_expense' expense.id %}">Edit</a>
+      <a href="{% url 'delete_expense' expense.id %}">Delete</a>
+    </li>
+  {% empty %}
+    <li>No expenses yet.</li>
+  {% endfor %}
+</ul>
