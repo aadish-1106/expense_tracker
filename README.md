@@ -23,23 +23,7 @@ models, views, templates, URL routing, and database integration.
 
 ---
 
-## Project Structure
-expense_tracker/
-├── manage.py
-├── expense_tracker/
-│ ├── settings.py
-│ ├── urls.py
-│ └── wsgi.py
-├── expenses/
-│ ├── models.py
-│ ├── views.py
-│ ├── urls.py
-│ └── templates/
-│ └── expenses/
-│ ├── list.html
-│ ├── add.html
-│ └── edit.html
-└── db.sqlite3
+
 
 
 ---
